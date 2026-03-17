@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <Router>
+      <Router basename="/UAI-hackathon-2026">
       <Routes>
         <Route path="/login" element={isAuthenticated ? <Navigate to="/" replace /> : <PinLogin />} />
         <Route path="/admin" element={<AdminPage />} />
